@@ -1,12 +1,4 @@
-//
-//  ImgFloTests.swift
-//  ImgFloTests
-//
-//  Created by Paul Young on 9/8/15.
-//  Copyright (c) 2015 The Grid. All rights reserved.
-//
-
-import Cocoa
+import Foundation
 import XCTest
 
 class ImgFloTests: XCTestCase {
