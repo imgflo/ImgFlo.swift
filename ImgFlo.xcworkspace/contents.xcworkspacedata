@@ -4,4 +4,7 @@
    <FileRef
       location = "group:ImgFlo.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Carthage/Checkouts/Crypto/Crypto.xcodeproj">
+   </FileRef>
 </Workspace>

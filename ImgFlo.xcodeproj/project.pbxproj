@@ -13,6 +13,8 @@
 		2C85CDFA1B9FADC0002E204D /* ImgFlo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C85CDEF1B9FADC0002E204D /* ImgFlo.framework */; };
 		2C85CE081B9FADEC002E204D /* ImgFlo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C85CDB31B9FABD0002E204D /* ImgFlo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C85CE091B9FADFB002E204D /* ImgFloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85CDC01B9FABD0002E204D /* ImgFloTests.swift */; };
+		2CF4FA8F1BA01F9C00EFEBA1 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF4FA8E1BA01F9C00EFEBA1 /* Crypto.framework */; };
+		2CF4FA901BA01FB100EFEBA1 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF4FA8E1BA01F9C00EFEBA1 /* Crypto.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,7 @@
 		2C85CDC01B9FABD0002E204D /* ImgFloTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgFloTests.swift; sourceTree = "<group>"; };
 		2C85CDEF1B9FADC0002E204D /* ImgFlo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImgFlo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C85CDF91B9FADC0002E204D /* ImgFlo-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ImgFlo-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CF4FA8E1BA01F9C00EFEBA1 /* Crypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CF4FA8F1BA01F9C00EFEBA1 /* Crypto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CF4FA901BA01FB100EFEBA1 /* Crypto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				2C85CDB21B9FABD0002E204D /* Info.plist */,
+				2CF4FA8E1BA01F9C00EFEBA1 /* Crypto.framework */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
