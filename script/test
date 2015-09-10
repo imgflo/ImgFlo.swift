@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+xctool -workspace ImgFlo.xcworkspace -scheme ImgFlo-Mac -sdk macosx clean test
+xctool -workspace ImgFlo.xcworkspace -scheme ImgFlo-iOS -sdk iphonesimulator clean test
