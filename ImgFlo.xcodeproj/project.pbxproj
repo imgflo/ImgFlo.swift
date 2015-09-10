@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C5259F01BA0AADB001B02FF /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CF4FA981BA0A7F400EFEBA1 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2C5259F11BA0AADB001B02FF /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CF4FA921BA0A71C00EFEBA1 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2C5259F31BA0AAF7001B02FF /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CF4FA981BA0A7F400EFEBA1 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2C5259F41BA0AAF7001B02FF /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CF4FA921BA0A71C00EFEBA1 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2C5259F51BA0AC8C001B02FF /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF4FA981BA0A7F400EFEBA1 /* Nimble.framework */; };
+		2C5259F61BA0AC8C001B02FF /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF4FA921BA0A71C00EFEBA1 /* Quick.framework */; };
 		2C85CDB41B9FABD0002E204D /* ImgFlo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C85CDB31B9FABD0002E204D /* ImgFlo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C85CDBA1B9FABD0002E204D /* ImgFlo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C85CDAE1B9FABD0002E204D /* ImgFlo.framework */; };
 		2C85CDC11B9FABD0002E204D /* ImgFloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85CDC01B9FABD0002E204D /* ImgFloTests.swift */; };
@@ -15,6 +21,8 @@
 		2C85CE091B9FADFB002E204D /* ImgFloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85CDC01B9FABD0002E204D /* ImgFloTests.swift */; };
 		2CF4FA8F1BA01F9C00EFEBA1 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF4FA8E1BA01F9C00EFEBA1 /* Crypto.framework */; };
 		2CF4FA901BA01FB100EFEBA1 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF4FA8E1BA01F9C00EFEBA1 /* Crypto.framework */; };
+		2CF4FA941BA0A71C00EFEBA1 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF4FA921BA0A71C00EFEBA1 /* Quick.framework */; };
+		2CF4FA9A1BA0A80400EFEBA1 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF4FA981BA0A7F400EFEBA1 /* Nimble.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,31 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2C5259EF1BA0AA5E001B02FF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2C5259F01BA0AADB001B02FF /* Nimble.framework in CopyFiles */,
+				2C5259F11BA0AADB001B02FF /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C5259F21BA0AAEB001B02FF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2C5259F31BA0AAF7001B02FF /* Nimble.framework in CopyFiles */,
+				2C5259F41BA0AAF7001B02FF /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2C85CDAE1B9FABD0002E204D /* ImgFlo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImgFlo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C85CDB21B9FABD0002E204D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,6 +77,8 @@
 		2C85CDEF1B9FADC0002E204D /* ImgFlo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImgFlo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C85CDF91B9FADC0002E204D /* ImgFlo-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ImgFlo-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CF4FA8E1BA01F9C00EFEBA1 /* Crypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CF4FA921BA0A71C00EFEBA1 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CF4FA981BA0A7F400EFEBA1 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +95,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C85CDBA1B9FABD0002E204D /* ImgFlo.framework in Frameworks */,
+				2CF4FA9A1BA0A80400EFEBA1 /* Nimble.framework in Frameworks */,
+				2CF4FA941BA0A71C00EFEBA1 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +113,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C85CDFA1B9FADC0002E204D /* ImgFlo.framework in Frameworks */,
+				2C5259F51BA0AC8C001B02FF /* Nimble.framework in Frameworks */,
+				2C5259F61BA0AC8C001B02FF /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +172,8 @@
 			isa = PBXGroup;
 			children = (
 				2C85CDBF1B9FABD0002E204D /* Info.plist */,
+				2CF4FA981BA0A7F400EFEBA1 /* Nimble.framework */,
+				2CF4FA921BA0A71C00EFEBA1 /* Quick.framework */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -184,6 +225,7 @@
 				2C85CDB51B9FABD0002E204D /* Sources */,
 				2C85CDB61B9FABD0002E204D /* Frameworks */,
 				2C85CDB71B9FABD0002E204D /* Resources */,
+				2C5259F21BA0AAEB001B02FF /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -220,6 +262,7 @@
 				2C85CDF51B9FADC0002E204D /* Sources */,
 				2C85CDF61B9FADC0002E204D /* Frameworks */,
 				2C85CDF71B9FADC0002E204D /* Resources */,
+				2C5259EF1BA0AA5E001B02FF /* CopyFiles */,
 			);
 			buildRules = (
 			);
