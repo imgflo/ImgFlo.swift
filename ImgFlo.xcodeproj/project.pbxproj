@@ -19,6 +19,16 @@
 		2C85CDFA1B9FADC0002E204D /* ImgFlo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C85CDEF1B9FADC0002E204D /* ImgFlo.framework */; };
 		2C85CE081B9FADEC002E204D /* ImgFlo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C85CDB31B9FABD0002E204D /* ImgFlo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C85CE091B9FADFB002E204D /* ImgFloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85CDC01B9FABD0002E204D /* ImgFloTests.swift */; };
+		2C85CE111B9FB358002E204D /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85CE101B9FB358002E204D /* Graph.swift */; };
+		2C85CE121B9FB358002E204D /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85CE101B9FB358002E204D /* Graph.swift */; };
+		2C85CE141B9FB72C002E204D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85CE131B9FB72C002E204D /* Color.swift */; };
+		2C85CE151B9FB72C002E204D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85CE131B9FB72C002E204D /* Color.swift */; };
+		2C85CE171B9FBD87002E204D /* AbyssPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85CE161B9FBD87002E204D /* AbyssPolicy.swift */; };
+		2C85CE181B9FBD87002E204D /* AbyssPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85CE161B9FBD87002E204D /* AbyssPolicy.swift */; };
+		2C85CE1A1B9FC2E8002E204D /* DecimalFraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85CE191B9FC2E8002E204D /* DecimalFraction.swift */; };
+		2C85CE1B1B9FC2E8002E204D /* DecimalFraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85CE191B9FC2E8002E204D /* DecimalFraction.swift */; };
+		2CF4FA8C1BA012ED00EFEBA1 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF4FA8B1BA012ED00EFEBA1 /* Client.swift */; };
+		2CF4FA8D1BA012ED00EFEBA1 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF4FA8B1BA012ED00EFEBA1 /* Client.swift */; };
 		2CF4FA8F1BA01F9C00EFEBA1 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF4FA8E1BA01F9C00EFEBA1 /* Crypto.framework */; };
 		2CF4FA901BA01FB100EFEBA1 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF4FA8E1BA01F9C00EFEBA1 /* Crypto.framework */; };
 		2CF4FA941BA0A71C00EFEBA1 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF4FA921BA0A71C00EFEBA1 /* Quick.framework */; };
@@ -76,6 +86,11 @@
 		2C85CDC01B9FABD0002E204D /* ImgFloTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgFloTests.swift; sourceTree = "<group>"; };
 		2C85CDEF1B9FADC0002E204D /* ImgFlo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImgFlo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C85CDF91B9FADC0002E204D /* ImgFlo-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ImgFlo-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C85CE101B9FB358002E204D /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		2C85CE131B9FB72C002E204D /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		2C85CE161B9FBD87002E204D /* AbyssPolicy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbyssPolicy.swift; sourceTree = "<group>"; };
+		2C85CE191B9FC2E8002E204D /* DecimalFraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecimalFraction.swift; sourceTree = "<group>"; };
+		2CF4FA8B1BA012ED00EFEBA1 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		2CF4FA8E1BA01F9C00EFEBA1 /* Crypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CF4FA921BA0A71C00EFEBA1 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CF4FA981BA0A7F400EFEBA1 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +160,11 @@
 			isa = PBXGroup;
 			children = (
 				2C85CDB31B9FABD0002E204D /* ImgFlo.h */,
+				2C85CE161B9FBD87002E204D /* AbyssPolicy.swift */,
+				2CF4FA8B1BA012ED00EFEBA1 /* Client.swift */,
+				2C85CE131B9FB72C002E204D /* Color.swift */,
+				2C85CE191B9FC2E8002E204D /* DecimalFraction.swift */,
+				2C85CE101B9FB358002E204D /* Graph.swift */,
 				2C85CDB11B9FABD0002E204D /* Supporting Files */,
 			);
 			path = ImgFlo;
@@ -354,6 +374,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C85CE121B9FB358002E204D /* Graph.swift in Sources */,
+				2CF4FA8D1BA012ED00EFEBA1 /* Client.swift in Sources */,
+				2C85CE151B9FB72C002E204D /* Color.swift in Sources */,
+				2C85CE1B1B9FC2E8002E204D /* DecimalFraction.swift in Sources */,
+				2C85CE181B9FBD87002E204D /* AbyssPolicy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +394,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C85CE111B9FB358002E204D /* Graph.swift in Sources */,
+				2CF4FA8C1BA012ED00EFEBA1 /* Client.swift in Sources */,
+				2C85CE141B9FB72C002E204D /* Color.swift in Sources */,
+				2C85CE1A1B9FC2E8002E204D /* DecimalFraction.swift in Sources */,
+				2C85CE171B9FBD87002E204D /* AbyssPolicy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
