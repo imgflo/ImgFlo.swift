@@ -23,7 +23,7 @@ public struct Client {
 
                 if let providedFormat = format {
                     derivedFormat = providedFormat
-                } else if let pathExtension = NSURL(string: URLString)?.lastPathComponent?.pathExtension where !pathExtension.isEmpty {
+                } else if let pathExtension = NSURL(string: URLString)?.pathExtension where !pathExtension.isEmpty {
                     derivedFormat = pathExtension.lowercaseString == "jpg:large" ? "jpg" : pathExtension
                 } else {
                     derivedFormat = nil
@@ -38,7 +38,7 @@ public struct Client {
                 }
                 
                 let token = "\(graphNameWithFormat)?\(query)\(secret)".MD5 as String
-                components.path = "/" + "/".join([ "graph", key, token, graphNameWithFormat ])
+                components.path = "/" + ([ "graph", key, token, graphNameWithFormat ]).joinWithSeparator("/")
             } else {
                 return .None
             }

@@ -100,14 +100,14 @@ public enum Graph {
                 "srgb": srgb ? "true" : "false"
             ]
             
-            let colorStopParams: Array<[String: AnyObject?]> = map(enumerate(colorStops)) { index, element in
+            let colorStopParams: Array<[String: AnyObject?]> = map(colorStops.enumerate()) { index, element in
                 return [
                     "color\(index + 1)": element.0.toHexString(),
                     "stop\(index + 1)": element.1.value
                 ]
             }
 
-            params = reduce(colorStopParams, initialParams, +)
+            params = colorStopParams.reduce(initialParams, combine: +)
         case let HaloDarken(width, height, edgeBlurX, edgeBlurY, strength):
             params = [
                 "width": width,
@@ -163,7 +163,7 @@ public enum Graph {
             ]
         }
         
-        return reduce(params, [NSURLQueryItem]()) { accum, elem in
+        return params.reduce([NSURLQueryItem]()) { accum, elem in
             if let value: AnyObject = elem.1 {
                 return accum  + [ NSURLQueryItem(name: elem.0, value: "\(value)") ]
             } else {
