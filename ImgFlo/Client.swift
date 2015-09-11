@@ -13,8 +13,18 @@ public struct Client {
     }
     
     public func getURL(graph: Graph, _ URLString: String, _ format: String? = nil) -> NSURL? {
-        if let components = NSURLComponents(string: server) {
-
+        if let components = NSURLComponents(string: server), URL = NSURL(string: URLString) {
+            let scheme = URL.scheme
+            let pathExtension = URL.lastPathComponent?.pathExtension
+            
+            if let scheme = URL.scheme where scheme == "data" {
+                return URL
+            }
+            
+            if let pathExtension = pathExtension where pathExtension == "gif" {
+                return URL
+            }
+            
             let input = NSURLQueryItem(name: "input", value: URLString)
             components.queryItems = [ input ] + graph.queryItems
         
@@ -23,7 +33,7 @@ public struct Client {
 
                 if let providedFormat = format {
                     derivedFormat = providedFormat
-                } else if let pathExtension = NSURL(string: URLString)?.lastPathComponent?.pathExtension where !pathExtension.isEmpty {
+                } else if let pathExtension = URL.lastPathComponent?.pathExtension where !pathExtension.isEmpty {
                     derivedFormat = pathExtension.lowercaseString == "jpg:large" ? "jpg" : pathExtension
                 } else {
                     derivedFormat = nil

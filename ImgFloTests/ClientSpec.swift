@@ -122,6 +122,26 @@ class ClientSpec: QuickSpec {
                     expect(URL?.absoluteString).to(equal(expected))
                 }
             }
+            
+            context("with a .gif extension") {
+                it("should return the original URL") {
+                    let graph: Graph = .Passthrough(width: 720, height: nil)
+                    let input = "http://www.reactiongifs.com/wp-content/uploads/2013/11/I-have-no-idea-what-I-am-doing.gif"
+                    let URL = imgflo.getURL(graph, input)
+                    
+                    expect(URL?.absoluteString).to(equal(input))
+                }
+            }
+            
+            context("with a data: scheme") {
+                it("should return the original URL") {
+                    let graph: Graph = .Passthrough(width: 720, height: nil)
+                    let input = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAABAAEDAREAAhEBAxEB/8QAFAABAAAAAAAAAAAAAAAAAAAACv/EABQQAQAAAAAAAAAAAAAAAAAAAAD/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AWAD/2Q=="
+                    let URL = imgflo.getURL(graph, input)
+                    
+                    expect(URL?.absoluteString).to(equal(input))
+                }
+            }
         }
     }
 }
