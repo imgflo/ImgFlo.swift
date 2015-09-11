@@ -89,7 +89,7 @@ public enum Graph {
                 "width": width,
                 "height": height,
                 "std-dev-x": stdDevX,
-                "std-dev-y": stdDevX,
+                "std-dev-y": stdDevY,
                 "abyss-policy": abyssPolicy.rawValue
             ]
         case let GradientMap(width, height, opacity, srgb, colorStops):
