@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-xctool -workspace ImgFlo.xcworkspace -scheme ImgFlo-Mac -sdk macosx clean test
+xcodebuild -workspace ImgFlo.xcworkspace -scheme ImgFlo-Mac -sdk macosx clean test
 
 # Tests for the iOS target pass in Xcode but fail on the command line
-# xctool -workspace ImgFlo.xcworkspace -scheme ImgFlo-iOS -sdk iphonesimulator clean test
+# xcodebuild -workspace ImgFlo.xcworkspace -scheme ImgFlo-iOS -sdk iphonesimulator clean test
