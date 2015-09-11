@@ -1,4 +1,4 @@
-# ImgFlo.swift [![Build Status](https://travis-ci.org/the-grid/ImgFlo.swift.svg)](https://travis-ci.org/the-grid/ImgFlo.swift)
+# ImgFlo.swift [![Build Status](https://travis-ci.org/the-grid/ImgFlo.swift.svg?branch=master)](https://travis-ci.org/the-grid/ImgFlo.swift)
 
 Conveniently produce authorized [imgflo](https://github.com/jonnor/imgflo) URLs.
 
