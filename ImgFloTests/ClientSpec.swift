@@ -1,6 +1,6 @@
 #if os(iOS)
     import UIKit
-#else
+#elseif os(OSX)
     import AppKit
 #endif
 
