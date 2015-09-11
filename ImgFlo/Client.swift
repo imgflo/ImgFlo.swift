@@ -37,8 +37,11 @@ public struct Client {
                     graphNameWithFormat = graph.rawValue
                 }
                 
-                let token = "\(graphNameWithFormat)?\(query)\(secret)".MD5 as String
-                components.path = "/" + ([ "graph", key, token, graphNameWithFormat ]).joinWithSeparator("/")
+                if let token = "\(graphNameWithFormat)?\(query)\(secret)".MD5 {
+                    components.path = "/" + ([ "graph", key, token, graphNameWithFormat ]).joinWithSeparator("/")
+                } else {
+                    return .None
+                }
             } else {
                 return .None
             }
