@@ -31,7 +31,7 @@ The following script requires [Carthage](https://github.com/Carthage/Carthage) t
 
 ### Running tests
 
-The following script requires [xctool](https://github.com/facebook/xctool) to be installed.
+The following script requires `xcodebuild` to be installed.
 
 ```sh
 ./script/test
