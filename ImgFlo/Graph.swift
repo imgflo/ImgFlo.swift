@@ -163,13 +163,15 @@ public enum Graph {
             ]
         }
         
-        return params.reduce([NSURLQueryItem]()) { accum, elem in
+        let reducedParams = params.reduce([NSURLQueryItem]()) { accum, elem in
             if let value: AnyObject = elem.1 {
                 return accum  + [ NSURLQueryItem(name: elem.0, value: "\(value)") ]
             } else {
                 return accum
             }
         }
+        
+        return reducedParams.sort { $0.name < $1.name }
     }
 }
 
