@@ -8,7 +8,7 @@ import ImgFlo
 import Nimble
 import Quick
 
-class ImgFloSpec: QuickSpec {
+class ClientSpec: QuickSpec {
     override func spec() {
         let imgflo = ImgFlo.Client(
             server: "https://imgflo.herokuapp.com",
