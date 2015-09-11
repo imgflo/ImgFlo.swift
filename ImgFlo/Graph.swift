@@ -100,7 +100,7 @@ public enum Graph {
                 "srgb": srgb ? "true" : "false"
             ]
             
-            let colorStopParams: Array<[String: AnyObject?]> = map(colorStops.enumerate()) { index, element in
+            let colorStopParams: Array<[String: AnyObject?]> = Array(colorStops.enumerate()).map { index, element in
                 return [
                     "color\(index + 1)": element.0.toHexString(),
                     "stop\(index + 1)": element.1.value
