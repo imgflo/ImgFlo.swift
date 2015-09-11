@@ -15,10 +15,8 @@
 		2C5259F61BA0AC8C001B02FF /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF4FA921BA0A71C00EFEBA1 /* Quick.framework */; };
 		2C85CDB41B9FABD0002E204D /* ImgFlo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C85CDB31B9FABD0002E204D /* ImgFlo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C85CDBA1B9FABD0002E204D /* ImgFlo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C85CDAE1B9FABD0002E204D /* ImgFlo.framework */; };
-		2C85CDC11B9FABD0002E204D /* ClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85CDC01B9FABD0002E204D /* ClientSpec.swift */; };
 		2C85CDFA1B9FADC0002E204D /* ImgFlo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C85CDEF1B9FADC0002E204D /* ImgFlo.framework */; };
 		2C85CE081B9FADEC002E204D /* ImgFlo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C85CDB31B9FABD0002E204D /* ImgFlo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C85CE091B9FADFB002E204D /* ClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85CDC01B9FABD0002E204D /* ClientSpec.swift */; };
 		2C85CE111B9FB358002E204D /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85CE101B9FB358002E204D /* Graph.swift */; };
 		2C85CE121B9FB358002E204D /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85CE101B9FB358002E204D /* Graph.swift */; };
 		2C85CE141B9FB72C002E204D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85CE131B9FB72C002E204D /* Color.swift */; };
@@ -27,6 +25,10 @@
 		2C85CE181B9FBD87002E204D /* AbyssPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85CE161B9FBD87002E204D /* AbyssPolicy.swift */; };
 		2C85CE1A1B9FC2E8002E204D /* DecimalFraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85CE191B9FC2E8002E204D /* DecimalFraction.swift */; };
 		2C85CE1B1B9FC2E8002E204D /* DecimalFraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85CE191B9FC2E8002E204D /* DecimalFraction.swift */; };
+		2CBE75E31BA2982C007E0F2D /* ClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85CDC01B9FABD0002E204D /* ClientSpec.swift */; };
+		2CBE75E41BA2982C007E0F2D /* ClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C85CDC01B9FABD0002E204D /* ClientSpec.swift */; };
+		2CBE75E51BA29837007E0F2D /* DecimalFractionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D89041BA2923000731534 /* DecimalFractionSpec.swift */; };
+		2CBE75E61BA29838007E0F2D /* DecimalFractionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D89041BA2923000731534 /* DecimalFractionSpec.swift */; };
 		2CF4FA8C1BA012ED00EFEBA1 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF4FA8B1BA012ED00EFEBA1 /* Client.swift */; };
 		2CF4FA8D1BA012ED00EFEBA1 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF4FA8B1BA012ED00EFEBA1 /* Client.swift */; };
 		2CF4FA8F1BA01F9C00EFEBA1 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF4FA8E1BA01F9C00EFEBA1 /* Crypto.framework */; };
@@ -78,6 +80,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C4D89041BA2923000731534 /* DecimalFractionSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecimalFractionSpec.swift; sourceTree = "<group>"; };
 		2C85CDAE1B9FABD0002E204D /* ImgFlo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImgFlo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C85CDB21B9FABD0002E204D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C85CDB31B9FABD0002E204D /* ImgFlo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImgFlo.h; sourceTree = "<group>"; };
@@ -183,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				2C85CDC01B9FABD0002E204D /* ClientSpec.swift */,
+				2C4D89041BA2923000731534 /* DecimalFractionSpec.swift */,
 				2C85CDBE1B9FABD0002E204D /* Supporting Files */,
 			);
 			path = ImgFloTests;
@@ -386,7 +390,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C85CDC11B9FABD0002E204D /* ClientSpec.swift in Sources */,
+				2CBE75E61BA29838007E0F2D /* DecimalFractionSpec.swift in Sources */,
+				2CBE75E41BA2982C007E0F2D /* ClientSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,7 +411,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C85CE091B9FADFB002E204D /* ClientSpec.swift in Sources */,
+				2CBE75E51BA29837007E0F2D /* DecimalFractionSpec.swift in Sources */,
+				2CBE75E31BA2982C007E0F2D /* ClientSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
