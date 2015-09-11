@@ -17,6 +17,18 @@ public struct Client {
             return .None
         }
         
+        guard let URL = NSURL(string: URLString) else {
+            return .None
+        }
+        
+        guard URL.scheme != "data" else {
+            return URL
+        }
+        
+        guard URL.pathExtension != "gif" else {
+            return URL
+        }
+        
         let input = NSURLQueryItem(name: "input", value: URLString)
         components.queryItems = [ input ] + graph.queryItems
         
@@ -28,7 +40,7 @@ public struct Client {
 
         if let providedFormat = format {
             derivedFormat = providedFormat
-        } else if let pathExtension = NSURL(string: URLString)?.pathExtension where !pathExtension.isEmpty {
+        } else if let pathExtension = URL.pathExtension where !pathExtension.isEmpty {
             derivedFormat = pathExtension.lowercaseString == "jpg:large" ? "jpg" : pathExtension
         } else {
             derivedFormat = nil
