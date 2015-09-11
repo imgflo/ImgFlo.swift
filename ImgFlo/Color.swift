@@ -1,7 +1,7 @@
 #if os(iOS)
     import UIKit
     public typealias Color = UIColor
-#else
+#elseif os(OSX)
     import AppKit
     public typealias Color = NSColor
 #endif
