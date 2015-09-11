@@ -26,7 +26,7 @@ let URL = imgflo.getURL(graph, input)
 The following script requires [Carthage](https://github.com/Carthage/Carthage) to be installed.
 
 ```sh
-./scripts/update
+./script/update
 ```
 
 ### Running tests
@@ -34,5 +34,5 @@ The following script requires [Carthage](https://github.com/Carthage/Carthage) t
 The following script requires [xctool](https://github.com/facebook/xctool) to be installed.
 
 ```sh
-./scripts/test
+./script/test
 ```
