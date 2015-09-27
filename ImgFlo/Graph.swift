@@ -19,7 +19,7 @@ public enum Graph {
     case MotionBlur(width: Int?, height: Int?, length: Double, angle: Double, brightness: Double, contrast: Double, strength: DecimalFraction)
     case Passthrough(width: Int?, height: Int?)
     
-    var rawValue: String {
+    var pathComponent: String {
         switch self {
         case .Canvas: return "canvas"
         case .Crop: return "crop"
