@@ -49,9 +49,9 @@ public struct Client {
         let graphNameWithFormat: String
 
         if let format = derivedFormat {
-            graphNameWithFormat = graph.rawValue + "." + format.lowercaseString
+            graphNameWithFormat = graph.pathComponent + "." + format.lowercaseString
         } else {
-            graphNameWithFormat = graph.rawValue
+            graphNameWithFormat = graph.pathComponent
         }
         
         guard let token = "\(graphNameWithFormat)?\(query)\(secret)".MD5 else {
