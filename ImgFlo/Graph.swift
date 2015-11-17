@@ -17,6 +17,7 @@ public enum Graph {
     case InstagramNashville(width: Int?, height: Int?)
     case InstagramXProII(width: Int?, height: Int?)
     case MotionBlur(width: Int?, height: Int?, length: Double, angle: Double, brightness: Double, contrast: Double, strength: DecimalFraction)
+    case NoOp
     case Passthrough(width: Int?, height: Int?)
     
     var pathComponent: String {
@@ -37,6 +38,7 @@ public enum Graph {
         case .InstagramNashville: return "insta_nashville"
         case .InstagramXProII: return "insta_xproii"
         case .MotionBlur: return "motionblur"
+        case .NoOp: return "noop"
         case .Passthrough: return "passthrough"
         }
     }
@@ -156,6 +158,8 @@ public enum Graph {
                 "contrast": contrast,
                 "strength": strength.value
             ]
+        case NoOp:
+            params = [:]
         case let .Passthrough(width, height):
             params = [
                 "width": width,

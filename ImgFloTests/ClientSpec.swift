@@ -118,12 +118,14 @@ class ClientSpec: QuickSpec {
             }
             
             context("with a .gif extension") {
-                it("should return the original URL") {
-                    let graph: Graph = .Passthrough(width: 720, height: nil)
+                it("should return a proxying URL with no-op graph") {
+                    let graph: Graph = .Passthrough(width: nil, height: nil)
                     let input = "http://www.reactiongifs.com/wp-content/uploads/2013/11/I-have-no-idea-what-I-am-doing.gif"
                     let URL = imgflo.getURL(graph, input)
                     
-                    expect(URL?.absoluteString).to(equal(input))
+                    let expected = "https://imgflo.herokuapp.com/graph/key/7a5c8e2c18cb5032f43b1b5348190404/noop.gif?input=http://www.reactiongifs.com/wp-content/uploads/2013/11/I-have-no-idea-what-I-am-doing.gif"
+                    
+                    expect(URL?.absoluteString).to(equal(expected))
                 }
             }
             
