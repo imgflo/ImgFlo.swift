@@ -4,7 +4,7 @@ git:
   submodules: false
 before_install:
   - brew update; brew update
-  - brew outdated xctool || brew upgrade xctool
   - brew install carthage
+  - git submodule update --init
 install: script/update
 script: script/test
