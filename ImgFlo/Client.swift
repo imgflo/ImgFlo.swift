@@ -25,12 +25,16 @@ public struct Client {
             return URL
         }
         
-        guard URL.pathExtension != "gif" else {
-            return URL
+        let input = NSURLQueryItem(name: "input", value: URLString)
+        let verifiedGraph: Graph
+        
+        if URL.pathExtension == "gif" {
+            verifiedGraph = .NoOp
+        } else {
+            verifiedGraph = graph
         }
         
-        let input = NSURLQueryItem(name: "input", value: URLString)
-        components.queryItems = [ input ] + graph.queryItems
+        components.queryItems = [ input ] + verifiedGraph.queryItems
         
         guard let query = components.percentEncodedQuery else {
             return .None
@@ -49,9 +53,9 @@ public struct Client {
         let graphNameWithFormat: String
 
         if let format = derivedFormat {
-            graphNameWithFormat = graph.pathComponent + "." + format.lowercaseString
+            graphNameWithFormat = verifiedGraph.pathComponent + "." + format.lowercaseString
         } else {
-            graphNameWithFormat = graph.pathComponent
+            graphNameWithFormat = verifiedGraph.pathComponent
         }
         
         guard let token = "\(graphNameWithFormat)?\(query)\(secret)".MD5 else {
