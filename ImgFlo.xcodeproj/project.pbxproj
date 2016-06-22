@@ -31,10 +31,10 @@
 		2CBE75E61BA29838007E0F2D /* DecimalFractionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D89041BA2923000731534 /* DecimalFractionSpec.swift */; };
 		2CF4FA8C1BA012ED00EFEBA1 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF4FA8B1BA012ED00EFEBA1 /* Client.swift */; };
 		2CF4FA8D1BA012ED00EFEBA1 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF4FA8B1BA012ED00EFEBA1 /* Client.swift */; };
-		2CF4FA8F1BA01F9C00EFEBA1 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF4FA8E1BA01F9C00EFEBA1 /* Crypto.framework */; };
-		2CF4FA901BA01FB100EFEBA1 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF4FA8E1BA01F9C00EFEBA1 /* Crypto.framework */; };
 		2CF4FA941BA0A71C00EFEBA1 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF4FA921BA0A71C00EFEBA1 /* Quick.framework */; };
 		2CF4FA9A1BA0A80400EFEBA1 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF4FA981BA0A7F400EFEBA1 /* Nimble.framework */; };
+		7681D0FB1D1A7FBC009E64CE /* SCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7681D0FA1D1A7FBC009E64CE /* SCrypto.framework */; };
+		7681D0FD1D1A7FC4009E64CE /* SCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7681D0FC1D1A7FC4009E64CE /* SCrypto.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +97,8 @@
 		2CF4FA8E1BA01F9C00EFEBA1 /* Crypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CF4FA921BA0A71C00EFEBA1 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CF4FA981BA0A7F400EFEBA1 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7681D0FA1D1A7FBC009E64CE /* SCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SCrypto.framework; path = "Carthage/Checkouts/SCrypto/build/Debug-iphoneos/SCrypto.framework"; sourceTree = "<group>"; };
+		7681D0FC1D1A7FC4009E64CE /* SCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SCrypto.framework; path = Carthage/Checkouts/SCrypto/build/Debug/SCrypto.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CF4FA8F1BA01F9C00EFEBA1 /* Crypto.framework in Frameworks */,
+				7681D0FD1D1A7FC4009E64CE /* SCrypto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CF4FA901BA01FB100EFEBA1 /* Crypto.framework in Frameworks */,
+				7681D0FB1D1A7FBC009E64CE /* SCrypto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +144,8 @@
 		2C85CDA41B9FABD0002E204D = {
 			isa = PBXGroup;
 			children = (
+				7681D0FC1D1A7FC4009E64CE /* SCrypto.framework */,
+				7681D0FA1D1A7FBC009E64CE /* SCrypto.framework */,
 				2C85CDB01B9FABD0002E204D /* ImgFlo */,
 				2C85CDBD1B9FABD0002E204D /* ImgFloTests */,
 				2C85CDAF1B9FABD0002E204D /* Products */,
@@ -521,7 +525,7 @@
 		2C85CDC51B9FABD0002E204D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -529,10 +533,12 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_TESTABILITY = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = ImgFlo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.thegrid.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ImgFlo;
 				SKIP_INSTALL = YES;
@@ -543,17 +549,19 @@
 		2C85CDC61B9FABD0002E204D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = ImgFlo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.thegrid.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ImgFlo;
 				SKIP_INSTALL = YES;
@@ -597,7 +605,7 @@
 		2C85CE031B9FADC0002E204D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -606,13 +614,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_TESTABILITY = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = ImgFlo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.thegrid.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ImgFlo;
@@ -626,16 +635,17 @@
 		2C85CE041B9FADC0002E204D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ImgFlo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.thegrid.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ImgFlo;
