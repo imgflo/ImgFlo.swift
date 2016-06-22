@@ -1,4 +1,5 @@
 import Foundation
+import SCrypto
 
 public struct Client {
     let server: String
@@ -57,9 +58,7 @@ public struct Client {
             graphNameWithFormat = verifiedGraph.pathComponent
         }
         
-        guard let token = "\(graphNameWithFormat)?\(query)\(secret)".MD5 else {
-            return .None
-        }
+        let token = "\(graphNameWithFormat)?\(query)\(secret)".MD5()
         
         components.path = "/" + ([ "graph", key, token, graphNameWithFormat ]).joinWithSeparator("/")
         
