@@ -31,8 +31,6 @@
 		2CBE75E61BA29838007E0F2D /* DecimalFractionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D89041BA2923000731534 /* DecimalFractionSpec.swift */; };
 		2CF4FA8C1BA012ED00EFEBA1 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF4FA8B1BA012ED00EFEBA1 /* Client.swift */; };
 		2CF4FA8D1BA012ED00EFEBA1 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF4FA8B1BA012ED00EFEBA1 /* Client.swift */; };
-		2CF4FA8F1BA01F9C00EFEBA1 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF4FA8E1BA01F9C00EFEBA1 /* Crypto.framework */; };
-		2CF4FA901BA01FB100EFEBA1 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF4FA8E1BA01F9C00EFEBA1 /* Crypto.framework */; };
 		2CF4FA941BA0A71C00EFEBA1 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF4FA921BA0A71C00EFEBA1 /* Quick.framework */; };
 		2CF4FA9A1BA0A80400EFEBA1 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF4FA981BA0A7F400EFEBA1 /* Nimble.framework */; };
 /* End PBXBuildFile section */
@@ -104,7 +102,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CF4FA8F1BA01F9C00EFEBA1 /* Crypto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +119,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CF4FA901BA01FB100EFEBA1 /* Crypto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

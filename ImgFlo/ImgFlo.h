@@ -7,3 +7,4 @@ FOUNDATION_EXPORT double ImgFloVersionNumber;
 FOUNDATION_EXPORT const unsigned char ImgFloVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <ImgFlo/PublicHeader.h>
+#import <CommonCrypto/CommonCrypto.h>

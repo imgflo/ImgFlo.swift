@@ -176,10 +176,11 @@ public enum Graph {
     }
 }
 
-private func + <T, V>(var lhs: [T: V], rhs: [T: V]) -> [T: V] {
+private func + <T, V>(lhs: [T: V], rhs: [T: V]) -> [T: V] {
+    var _lhs = lhs
     for (key, val) in rhs {
-        lhs[key] = val
+        _lhs[key] = val
     }
     
-    return lhs
+    return _lhs
 }

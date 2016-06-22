@@ -1,4 +1,3 @@
-import Crypto
 import Foundation
 
 public struct Client {
