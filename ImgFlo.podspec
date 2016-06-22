@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ImgFlo"
-  s.version      = "1.3.0"
+  s.version      = "0.2.5"
   s.summary      = "Conveniently produce authorized imgflo URLs."
   s.homepage     = "https://github.com/the-grid/ImgFlo.swift"
   s.license     = { :type => "MIT" }
