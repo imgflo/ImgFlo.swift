@@ -12,23 +12,23 @@ public struct Client {
         self.secret = secret
     }
     
-    public func getURL(_ graph: Graph, _ URLString: String, _ format: String? = nil) -> URL? {
+    public func getURL(_ graph: Graph, _ URLString: String, _ format: String? = nil) -> NSURL? {
         guard var components = URLComponents(string: server) else {
             return .none
         }
         
-        guard let URL = URL(string: URLString) else {
+        guard let _URL = NSURL(string: URLString) else {
             return .none
         }
         
-        guard URL.scheme != "data" else {
-            return URL
+        guard _URL.scheme != "data" else {
+            return _URL
         }
         
         let input = URLQueryItem(name: "input", value: URLString)
         let verifiedGraph: Graph
         
-        if URL.pathExtension == "gif" {
+        if _URL.pathExtension == "gif" {
             verifiedGraph = .noOp
         } else {
             verifiedGraph = graph
@@ -44,9 +44,9 @@ public struct Client {
 
         if let providedFormat = format {
             derivedFormat = providedFormat
-        } else if !URL.pathExtension.isEmpty {
-            let pathExtension = URL.pathExtension
-            derivedFormat = pathExtension.lowercased() == "jpg:large" ? "jpg" : pathExtension
+        } else if !(_URL.pathExtension ?? "").isEmpty {
+            let pathExtension = _URL.pathExtension
+            derivedFormat = pathExtension?.lowercased() == "jpg:large" ? "jpg" : pathExtension
         } else {
             derivedFormat = nil
         }
@@ -63,6 +63,6 @@ public struct Client {
         
         components.path = "/" + ([ "graph", key, token, graphNameWithFormat ]).joined(separator: "/")
         
-        return components.url
+        return components.url as NSURL?
     }
 }

@@ -65,8 +65,6 @@
 		2C85CE191B9FC2E8002E204D /* DecimalFraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecimalFraction.swift; sourceTree = "<group>"; };
 		2CF4FA8B1BA012ED00EFEBA1 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		2CF4FA8E1BA01F9C00EFEBA1 /* Crypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2CF4FA921BA0A71C00EFEBA1 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2CF4FA981BA0A7F400EFEBA1 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F1CA119E5AE640FC9EBCDC6 /* Pods-ImgFlo-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImgFlo-Mac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImgFlo-Mac/Pods-ImgFlo-Mac.debug.xcconfig"; sourceTree = "<group>"; };
 		6137FCA34D34C03A45B48EB5 /* Pods-ImgFlo-MacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImgFlo-MacTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImgFlo-MacTests/Pods-ImgFlo-MacTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6F27C1272B74490C0AB55C91 /* Pods-ImgFlo-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImgFlo-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImgFlo-iOSTests/Pods-ImgFlo-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -177,8 +175,6 @@
 			isa = PBXGroup;
 			children = (
 				2C85CDBF1B9FABD0002E204D /* Info.plist */,
-				2CF4FA981BA0A7F400EFEBA1 /* Nimble.framework */,
-				2CF4FA921BA0A71C00EFEBA1 /* Quick.framework */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
