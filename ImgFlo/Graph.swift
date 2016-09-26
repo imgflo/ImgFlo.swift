@@ -1,178 +1,180 @@
 import Foundation
 
 public enum Graph {
-    case Canvas(width: Int?, height: Int?, color: Color)
-    case Crop(width: Int?, height: Int?, cropX: Int, cropY: Int, cropWidth: Int, cropHeight: Int)
-    case CustomGrey(width: Int?, height: Int?)
-    case DelaunayTriangles(width: Int?, height: Int?, seed: String)
-    case Desaturate(width: Int?, height: Int?, grainSize: Int, samples: Int)
-    case EnhanceLowRes(width: Int?, height: Int?, iterations: Int)
-    case GaussianBlur(width: Int?, height: Int?, stdDevX: Double, stdDevY: Double, abyssPolicy: AbyssPolicy)
-    case GradientMap(width: Int?, height: Int?, opacity: DecimalFraction?, srgb: Bool, colorStops: [(Color, DecimalFraction)])
-    case HaloDarken(width: Int?, height: Int?, edgeBlurX: Double, edgeBlurY: Double, strength: DecimalFraction)
-    case Instagram1977(width: Int?, height: Int?)
-    case InstagramBrannan(width: Int?, height: Int?)
-    case InstagramHefe(width: Int?, height: Int?)
-    case InstagramLordKelvin(width: Int?, height: Int?)
-    case InstagramNashville(width: Int?, height: Int?)
-    case InstagramXProII(width: Int?, height: Int?)
-    case MotionBlur(width: Int?, height: Int?, length: Double, angle: Double, brightness: Double, contrast: Double, strength: DecimalFraction)
-    case NoOp
-    case Passthrough(width: Int?, height: Int?)
+    case canvas(width: Int?, height: Int?, color: Color)
+    case crop(width: Int?, height: Int?, cropX: Int, cropY: Int, cropWidth: Int, cropHeight: Int)
+    case customGrey(width: Int?, height: Int?)
+    case delaunayTriangles(width: Int?, height: Int?, seed: String)
+    case desaturate(width: Int?, height: Int?, grainSize: Int, samples: Int)
+    case enhanceLowRes(width: Int?, height: Int?, iterations: Int)
+    case gaussianBlur(width: Int?, height: Int?, stdDevX: Double, stdDevY: Double, abyssPolicy: AbyssPolicy)
+    case gradientMap(width: Int?, height: Int?, opacity: DecimalFraction?, srgb: Bool, colorStops: [(Color, DecimalFraction)])
+    case haloDarken(width: Int?, height: Int?, edgeBlurX: Double, edgeBlurY: Double, strength: DecimalFraction)
+    case instagram1977(width: Int?, height: Int?)
+    case instagramBrannan(width: Int?, height: Int?)
+    case instagramHefe(width: Int?, height: Int?)
+    case instagramLordKelvin(width: Int?, height: Int?)
+    case instagramNashville(width: Int?, height: Int?)
+    case instagramXProII(width: Int?, height: Int?)
+    case motionBlur(width: Int?, height: Int?, length: Double, angle: Double, brightness: Double, contrast: Double, strength: DecimalFraction)
+    case noOp
+    case passthrough(width: Int?, height: Int?)
     
     var pathComponent: String {
         switch self {
-        case .Canvas: return "canvas"
-        case .Crop: return "crop"
-        case .CustomGrey: return "customgrey"
-        case .DelaunayTriangles: return "delaunay_triangles"
-        case .Desaturate: return "desaturate"
-        case .EnhanceLowRes: return "enhancelowres"
-        case .GaussianBlur: return "gaussianblur"
-        case .GradientMap: return "gradientmap"
-        case .HaloDarken: return "halodarken"
-        case .Instagram1977: return "insta_1977"
-        case .InstagramBrannan: return "insta_brannan"
-        case .InstagramHefe: return "insta_hefe"
-        case .InstagramLordKelvin: return "insta_lordkelvin"
-        case .InstagramNashville: return "insta_nashville"
-        case .InstagramXProII: return "insta_xproii"
-        case .MotionBlur: return "motionblur"
-        case .NoOp: return "noop"
-        case .Passthrough: return "passthrough"
+        case .canvas: return "canvas"
+        case .crop: return "crop"
+        case .customGrey: return "customgrey"
+        case .delaunayTriangles: return "delaunay_triangles"
+        case .desaturate: return "desaturate"
+        case .enhanceLowRes: return "enhancelowres"
+        case .gaussianBlur: return "gaussianblur"
+        case .gradientMap: return "gradientmap"
+        case .haloDarken: return "halodarken"
+        case .instagram1977: return "insta_1977"
+        case .instagramBrannan: return "insta_brannan"
+        case .instagramHefe: return "insta_hefe"
+        case .instagramLordKelvin: return "insta_lordkelvin"
+        case .instagramNashville: return "insta_nashville"
+        case .instagramXProII: return "insta_xproii"
+        case .motionBlur: return "motionblur"
+        case .noOp: return "noop"
+        case .passthrough: return "passthrough"
         }
     }
     
-    var queryItems: [NSURLQueryItem] {
+    var queryItems: [URLQueryItem] {
         let params: [String: AnyObject?]
         
         switch self {
-        case let Canvas(width, height, color):
+        case let .canvas(width, height, color):
             params = [
-                "width": width,
-                "height": height,
-                "color": color.toHexString()
+                "width": width as Optional<AnyObject>,
+                "height": height as Optional<AnyObject>,
+                "color": color.toHexString() as Optional<AnyObject>
             ]
-        case let Crop(width, height, cropX, cropY, cropWidth, cropHeight):
+        case let .crop(width, height, cropX, cropY, cropWidth, cropHeight):
             params = [
-                "width": width,
-                "height": height,
-                "x": cropX,
-                "y": cropY,
-                "cropwidth": cropWidth,
-                "cropheight": cropHeight
+                "width": width as Optional<AnyObject>,
+                "height": height as Optional<AnyObject>,
+                "x": cropX as Optional<AnyObject>,
+                "y": cropY as Optional<AnyObject>,
+                "cropwidth": cropWidth as Optional<AnyObject>,
+                "cropheight": cropHeight as Optional<AnyObject>
             ]
-        case let CustomGrey(width, height):
+        case let .customGrey(width, height):
             params = [
-                "width": width,
-                "height": height
+                "width": width as Optional<AnyObject>,
+                "height": height as Optional<AnyObject>
             ]
-        case let DelaunayTriangles(width, height, seed):
+        case let .delaunayTriangles(width, height, seed):
             params = [
-                "width": width,
-                "height": height,
-                "seed": seed
+                "width": width as Optional<AnyObject>,
+                "height": height as Optional<AnyObject>,
+                "seed": seed as Optional<AnyObject>
             ]
-        case let Desaturate(width, height, grainSize, samples):
+        case let .desaturate(width, height, grainSize, samples):
             params = [
-                "width": width,
-                "height": height,
-                "grainsize": grainSize,
-                "samples": samples
+                "width": width as Optional<AnyObject>,
+                "height": height as Optional<AnyObject>,
+                "grainsize": grainSize as Optional<AnyObject>,
+                "samples": samples as Optional<AnyObject>
             ]
-        case let EnhanceLowRes(width, height, iterations):
+        case let .enhanceLowRes(width, height, iterations):
             params = [
-                "width": width,
-                "height": height,
-                "iterations": iterations
+                "width": width as Optional<AnyObject>,
+                "height": height as Optional<AnyObject>,
+                "iterations": iterations as Optional<AnyObject>
             ]
-        case let GaussianBlur(width, height, stdDevX, stdDevY, abyssPolicy):
+        case let .gaussianBlur(width, height, stdDevX, stdDevY, abyssPolicy):
             params = [
-                "width": width,
-                "height": height,
-                "std-dev-x": stdDevX,
-                "std-dev-y": stdDevY,
-                "abyss-policy": abyssPolicy.rawValue
+                "width": width as Optional<AnyObject>,
+                "height": height as Optional<AnyObject>,
+                "std-dev-x": stdDevX as Optional<AnyObject>,
+                "std-dev-y": stdDevY as Optional<AnyObject>,
+                "abyss-policy": abyssPolicy.rawValue as Optional<AnyObject>
             ]
-        case let GradientMap(width, height, opacity, srgb, colorStops):
+        case let .gradientMap(width, height, opacity, srgb, colorStops):
             let initialParams: [String: AnyObject?] = [
-                "width": width,
-                "height": height,
-                "opacity": opacity?.value,
-                "srgb": srgb ? "true" : "false"
+                "width": width as Optional<AnyObject>,
+                "height": height as Optional<AnyObject>,
+                "opacity": opacity?.value as Optional<AnyObject>,
+                "srgb": srgb ? "true" as Optional<AnyObject> : "false" as Optional<AnyObject>
             ]
-            
-            let colorStopParams: Array<[String: AnyObject?]> = Array(colorStops.enumerate()).map { index, element in
-                return [
-                    "color\(index + 1)": element.0.toHexString(),
-                    "stop\(index + 1)": element.1.value
-                ]
-            }
 
-            params = colorStopParams.reduce(initialParams, combine: +)
-        case let HaloDarken(width, height, edgeBlurX, edgeBlurY, strength):
+            let colorStopParams : Array<[String : AnyObject?]> = Array(colorStops.enumerated()).map
+                { index, element in
+                    return [
+                        "color\(index + 1)": element.0.toHexString() as Optional<AnyObject>,
+                        "stop\(index + 1)": element.1.value as Optional<AnyObject>
+                    ]
+                }
+
+
+            params = colorStopParams.reduce(initialParams, +)
+        case let .haloDarken(width, height, edgeBlurX, edgeBlurY, strength):
             params = [
-                "width": width,
-                "height": height,
-                "edgeblur-x": edgeBlurX,
-                "edgeblur-y": edgeBlurY,
-                "strength": strength.value
+                "width": width as Optional<AnyObject>,
+                "height": height as Optional<AnyObject>,
+                "edgeblur-x": edgeBlurX as Optional<AnyObject>,
+                "edgeblur-y": edgeBlurY as Optional<AnyObject>,
+                "strength": strength.value as Optional<AnyObject>
             ]
-        case let Instagram1977(width, height):
+        case let .instagram1977(width, height):
             params = [
-                "width": width,
-                "height": height
+                "width": width as Optional<AnyObject>,
+                "height": height as Optional<AnyObject>
             ]
-        case let InstagramBrannan(width, height):
+        case let .instagramBrannan(width, height):
             params = [
-                "width": width,
-                "height": height
+                "width": width as Optional<AnyObject>,
+                "height": height as Optional<AnyObject>
             ]
-        case let InstagramHefe(width, height):
+        case let .instagramHefe(width, height):
             params = [
-                "width": width,
-                "height": height
+                "width": width as Optional<AnyObject>,
+                "height": height as Optional<AnyObject>
             ]
-        case let InstagramLordKelvin(width, height):
+        case let .instagramLordKelvin(width, height):
             params = [
-                "width": width,
-                "height": height
+                "width": width as Optional<AnyObject>,
+                "height": height as Optional<AnyObject>
             ]
-        case let InstagramNashville(width, height):
+        case let .instagramNashville(width, height):
             params = [
-                "width": width,
-                "height": height
+                "width": width as Optional<AnyObject>,
+                "height": height as Optional<AnyObject>
             ]
-        case let InstagramXProII(width, height):
+        case let .instagramXProII(width, height):
             params = [
-                "width": width,
-                "height": height
+                "width": width as Optional<AnyObject>,
+                "height": height as Optional<AnyObject>
             ]
-        case let MotionBlur(width, height, length, angle, brightness, contrast, strength):
+        case let .motionBlur(width, height, length, angle, brightness, contrast, strength):
             params = [
-                "width": width,
-                "height": height,
-                "length": length,
-                "angle": angle,
-                "brightness": brightness,
-                "contrast": contrast,
-                "strength": strength.value
+                "width": width as Optional<AnyObject>,
+                "height": height as Optional<AnyObject>,
+                "length": length as Optional<AnyObject>,
+                "angle": angle as Optional<AnyObject>,
+                "brightness": brightness as Optional<AnyObject>,
+                "contrast": contrast as Optional<AnyObject>,
+                "strength": strength.value as Optional<AnyObject>
             ]
-        case NoOp:
+        case .noOp:
             params = [:]
-        case let .Passthrough(width, height):
+        case let .passthrough(width, height):
             params = [
-                "width": width,
-                "height": height
+                "width": width as Optional<AnyObject>,
+                "height": height as Optional<AnyObject>
             ]
         }
         
-        let reducedParams = params.reduce([NSURLQueryItem]()) { accum, elem in
+        let reducedParams = params.reduce([URLQueryItem]()) { accum, elem in
             guard let value: AnyObject = elem.1 else { return accum }
-            return accum  + [ NSURLQueryItem(name: elem.0, value: "\(value)") ]
+            return accum  + [ URLQueryItem(name: elem.0, value: "\(value)") ]
         }
         
-        return reducedParams.sort { $0.name < $1.name }
+        return reducedParams.sorted { $0.name < $1.name }
     }
 }
 
