@@ -14,20 +14,6 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5ED8F9ED1C51788B00DE0760"
-               BuildableName = "SCrypto.framework"
-               BlueprintName = "SCrypto iOS"
-               ReferencedContainer = "container:Carthage/Checkouts/SCrypto/SCrypto.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "2C85CDEE1B9FADC0002E204D"
                BuildableName = "ImgFlo.framework"
                BlueprintName = "ImgFlo-iOS"
