@@ -1,10 +1,10 @@
 language: objective-c
-osx_image: xcode7
-git:
-  submodules: false
+osx_image: xcode8
 before_install:
-  - brew update; brew update
-  - brew install carthage
-  - git submodule update --init
+  - gem install cocoapods --no-document --quiet
+  - gem install xcpretty --no-document --quiet
 install: script/update
-script: script/test
+script: 
+  - xcodebuild -version
+  - xcodebuild -showsdks
+  - script/test

@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-xcodebuild -workspace ImgFlo.xcworkspace -scheme ImgFlo-Mac -sdk macosx clean test
-xcodebuild -workspace ImgFlo.xcworkspace -scheme ImgFlo-iOS -sdk iphonesimulator clean test
+xcodebuild -workspace ImgFlo.xcworkspace -scheme ImgFlo-Mac -sdk macosx clean test | xcpretty -c
+xcodebuild -workspace ImgFlo.xcworkspace -scheme ImgFlo-iOS -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.0' -sdk iphonesimulator clean test | xcpretty -c
