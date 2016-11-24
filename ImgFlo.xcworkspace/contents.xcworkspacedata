@@ -5,12 +5,6 @@
       location = "group:ImgFlo.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Carthage/Checkouts/Nimble/Nimble.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Carthage/Checkouts/Quick/Quick.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Carthage/Checkouts/SCrypto/SCrypto.xcodeproj">
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

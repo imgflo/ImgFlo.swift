@@ -7,12 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C5259F01BA0AADB001B02FF /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CF4FA981BA0A7F400EFEBA1 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2C5259F11BA0AADB001B02FF /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CF4FA921BA0A71C00EFEBA1 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2C5259F31BA0AAF7001B02FF /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CF4FA981BA0A7F400EFEBA1 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2C5259F41BA0AAF7001B02FF /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CF4FA921BA0A71C00EFEBA1 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2C5259F51BA0AC8C001B02FF /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF4FA981BA0A7F400EFEBA1 /* Nimble.framework */; };
-		2C5259F61BA0AC8C001B02FF /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF4FA921BA0A71C00EFEBA1 /* Quick.framework */; };
+		11A8A7D653B326876A25EE66 /* Pods_ImgFlo_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E282275D3C9F6925240350 /* Pods_ImgFlo_iOSTests.framework */; };
 		2C85CDB41B9FABD0002E204D /* ImgFlo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C85CDB31B9FABD0002E204D /* ImgFlo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C85CDBA1B9FABD0002E204D /* ImgFlo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C85CDAE1B9FABD0002E204D /* ImgFlo.framework */; };
 		2C85CDFA1B9FADC0002E204D /* ImgFlo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C85CDEF1B9FADC0002E204D /* ImgFlo.framework */; };
@@ -31,10 +26,9 @@
 		2CBE75E61BA29838007E0F2D /* DecimalFractionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D89041BA2923000731534 /* DecimalFractionSpec.swift */; };
 		2CF4FA8C1BA012ED00EFEBA1 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF4FA8B1BA012ED00EFEBA1 /* Client.swift */; };
 		2CF4FA8D1BA012ED00EFEBA1 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF4FA8B1BA012ED00EFEBA1 /* Client.swift */; };
-		2CF4FA941BA0A71C00EFEBA1 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF4FA921BA0A71C00EFEBA1 /* Quick.framework */; };
-		2CF4FA9A1BA0A80400EFEBA1 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF4FA981BA0A7F400EFEBA1 /* Nimble.framework */; };
-		7681D0FB1D1A7FBC009E64CE /* SCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7681D0FA1D1A7FBC009E64CE /* SCrypto.framework */; };
-		7681D0FD1D1A7FC4009E64CE /* SCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7681D0FC1D1A7FC4009E64CE /* SCrypto.framework */; };
+		589E7614ADC41D9ECF1298E0 /* Pods_ImgFlo_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E554002AA4AC47A7C6FB2F0D /* Pods_ImgFlo_iOS.framework */; };
+		636851C0CFFC03D76A9BF9CF /* Pods_ImgFlo_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724AA378DE2CA84F1DF81059 /* Pods_ImgFlo_Mac.framework */; };
+		89F62BBA9B910CD949F3F558 /* Pods_ImgFlo_MacTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032730917C77952ED243191A /* Pods_ImgFlo_MacTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,32 +48,8 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		2C5259EF1BA0AA5E001B02FF /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				2C5259F01BA0AADB001B02FF /* Nimble.framework in CopyFiles */,
-				2C5259F11BA0AADB001B02FF /* Quick.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2C5259F21BA0AAEB001B02FF /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				2C5259F31BA0AAF7001B02FF /* Nimble.framework in CopyFiles */,
-				2C5259F41BA0AAF7001B02FF /* Quick.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		032730917C77952ED243191A /* Pods_ImgFlo_MacTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImgFlo_MacTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4D89041BA2923000731534 /* DecimalFractionSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecimalFractionSpec.swift; sourceTree = "<group>"; };
 		2C85CDAE1B9FABD0002E204D /* ImgFlo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImgFlo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C85CDB21B9FABD0002E204D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,10 +65,17 @@
 		2C85CE191B9FC2E8002E204D /* DecimalFraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecimalFraction.swift; sourceTree = "<group>"; };
 		2CF4FA8B1BA012ED00EFEBA1 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		2CF4FA8E1BA01F9C00EFEBA1 /* Crypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2CF4FA921BA0A71C00EFEBA1 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2CF4FA981BA0A7F400EFEBA1 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7681D0FA1D1A7FBC009E64CE /* SCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SCrypto.framework; path = "Carthage/Checkouts/SCrypto/build/Debug-iphoneos/SCrypto.framework"; sourceTree = "<group>"; };
-		7681D0FC1D1A7FC4009E64CE /* SCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SCrypto.framework; path = Carthage/Checkouts/SCrypto/build/Debug/SCrypto.framework; sourceTree = "<group>"; };
+		2F1CA119E5AE640FC9EBCDC6 /* Pods-ImgFlo-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImgFlo-Mac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImgFlo-Mac/Pods-ImgFlo-Mac.debug.xcconfig"; sourceTree = "<group>"; };
+		6137FCA34D34C03A45B48EB5 /* Pods-ImgFlo-MacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImgFlo-MacTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImgFlo-MacTests/Pods-ImgFlo-MacTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F27C1272B74490C0AB55C91 /* Pods-ImgFlo-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImgFlo-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImgFlo-iOSTests/Pods-ImgFlo-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		704852BB4A569793049872CE /* Pods-ImgFlo-MacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImgFlo-MacTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImgFlo-MacTests/Pods-ImgFlo-MacTests.release.xcconfig"; sourceTree = "<group>"; };
+		724AA378DE2CA84F1DF81059 /* Pods_ImgFlo_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImgFlo_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99AA33FDE618D891C761A52E /* Pods-ImgFlo-Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImgFlo-Mac.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImgFlo-Mac/Pods-ImgFlo-Mac.release.xcconfig"; sourceTree = "<group>"; };
+		9CE9D067C53C62503A6DDAC6 /* Pods-ImgFlo-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImgFlo-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImgFlo-iOSTests/Pods-ImgFlo-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ACFA145DF492014F2E6A254A /* Pods-ImgFlo-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImgFlo-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImgFlo-iOS/Pods-ImgFlo-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		D5E282275D3C9F6925240350 /* Pods_ImgFlo_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImgFlo_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D795D9714A9D782F4D14F5CA /* Pods-ImgFlo-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImgFlo-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImgFlo-iOS/Pods-ImgFlo-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		E554002AA4AC47A7C6FB2F0D /* Pods_ImgFlo_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImgFlo_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7681D0FD1D1A7FC4009E64CE /* SCrypto.framework in Frameworks */,
+				636851C0CFFC03D76A9BF9CF /* Pods_ImgFlo_Mac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,8 +92,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C85CDBA1B9FABD0002E204D /* ImgFlo.framework in Frameworks */,
-				2CF4FA9A1BA0A80400EFEBA1 /* Nimble.framework in Frameworks */,
-				2CF4FA941BA0A71C00EFEBA1 /* Quick.framework in Frameworks */,
+				89F62BBA9B910CD949F3F558 /* Pods_ImgFlo_MacTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,7 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7681D0FB1D1A7FBC009E64CE /* SCrypto.framework in Frameworks */,
+				589E7614ADC41D9ECF1298E0 /* Pods_ImgFlo_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,8 +109,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C85CDFA1B9FADC0002E204D /* ImgFlo.framework in Frameworks */,
-				2C5259F51BA0AC8C001B02FF /* Nimble.framework in Frameworks */,
-				2C5259F61BA0AC8C001B02FF /* Quick.framework in Frameworks */,
+				11A8A7D653B326876A25EE66 /* Pods_ImgFlo_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,11 +119,11 @@
 		2C85CDA41B9FABD0002E204D = {
 			isa = PBXGroup;
 			children = (
-				7681D0FC1D1A7FC4009E64CE /* SCrypto.framework */,
-				7681D0FA1D1A7FBC009E64CE /* SCrypto.framework */,
 				2C85CDB01B9FABD0002E204D /* ImgFlo */,
 				2C85CDBD1B9FABD0002E204D /* ImgFloTests */,
 				2C85CDAF1B9FABD0002E204D /* Products */,
+				7545FC5428A818958781179D /* Pods */,
+				7912E8C30F8393E49293D847 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -200,10 +175,34 @@
 			isa = PBXGroup;
 			children = (
 				2C85CDBF1B9FABD0002E204D /* Info.plist */,
-				2CF4FA981BA0A7F400EFEBA1 /* Nimble.framework */,
-				2CF4FA921BA0A71C00EFEBA1 /* Quick.framework */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7545FC5428A818958781179D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F1CA119E5AE640FC9EBCDC6 /* Pods-ImgFlo-Mac.debug.xcconfig */,
+				99AA33FDE618D891C761A52E /* Pods-ImgFlo-Mac.release.xcconfig */,
+				6137FCA34D34C03A45B48EB5 /* Pods-ImgFlo-MacTests.debug.xcconfig */,
+				704852BB4A569793049872CE /* Pods-ImgFlo-MacTests.release.xcconfig */,
+				ACFA145DF492014F2E6A254A /* Pods-ImgFlo-iOS.debug.xcconfig */,
+				D795D9714A9D782F4D14F5CA /* Pods-ImgFlo-iOS.release.xcconfig */,
+				9CE9D067C53C62503A6DDAC6 /* Pods-ImgFlo-iOSTests.debug.xcconfig */,
+				6F27C1272B74490C0AB55C91 /* Pods-ImgFlo-iOSTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7912E8C30F8393E49293D847 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				724AA378DE2CA84F1DF81059 /* Pods_ImgFlo_Mac.framework */,
+				032730917C77952ED243191A /* Pods_ImgFlo_MacTests.framework */,
+				E554002AA4AC47A7C6FB2F0D /* Pods_ImgFlo_iOS.framework */,
+				D5E282275D3C9F6925240350 /* Pods_ImgFlo_iOSTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,10 +231,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C85CDC41B9FABD0002E204D /* Build configuration list for PBXNativeTarget "ImgFlo-Mac" */;
 			buildPhases = (
+				6DEE4684E1E342ACD30A51C0 /* [CP] Check Pods Manifest.lock */,
 				2C85CDA91B9FABD0002E204D /* Sources */,
 				2C85CDAA1B9FABD0002E204D /* Frameworks */,
 				2C85CDAB1B9FABD0002E204D /* Headers */,
 				2C85CDAC1B9FABD0002E204D /* Resources */,
+				23CDBF2F2DF90A70A05CBBE6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,10 +251,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C85CDC71B9FABD0002E204D /* Build configuration list for PBXNativeTarget "ImgFlo-MacTests" */;
 			buildPhases = (
+				C69F4201A3146A76E4C8926C /* [CP] Check Pods Manifest.lock */,
 				2C85CDB51B9FABD0002E204D /* Sources */,
 				2C85CDB61B9FABD0002E204D /* Frameworks */,
 				2C85CDB71B9FABD0002E204D /* Resources */,
-				2C5259F21BA0AAEB001B02FF /* CopyFiles */,
+				D6B5B749BC0EE6A25E2649CD /* [CP] Embed Pods Frameworks */,
+				ECFCA539C49467C77E36A571 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -269,10 +272,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C85CE021B9FADC0002E204D /* Build configuration list for PBXNativeTarget "ImgFlo-iOS" */;
 			buildPhases = (
+				146251D03AAA92D61E0584E4 /* [CP] Check Pods Manifest.lock */,
 				2C85CDEA1B9FADC0002E204D /* Sources */,
 				2C85CDEB1B9FADC0002E204D /* Frameworks */,
 				2C85CDEC1B9FADC0002E204D /* Headers */,
 				2C85CDED1B9FADC0002E204D /* Resources */,
+				DDBB3146062A66E68E5AA48E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -287,10 +292,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C85CE051B9FADC0002E204D /* Build configuration list for PBXNativeTarget "ImgFlo-iOSTests" */;
 			buildPhases = (
+				014846360251024134AD8948 /* [CP] Check Pods Manifest.lock */,
 				2C85CDF51B9FADC0002E204D /* Sources */,
 				2C85CDF61B9FADC0002E204D /* Frameworks */,
 				2C85CDF71B9FADC0002E204D /* Resources */,
-				2C5259EF1BA0AA5E001B02FF /* CopyFiles */,
+				5B9F6C42977A6520DD2BC207 /* [CP] Embed Pods Frameworks */,
+				903F053D742CA9157E4C24AE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -310,7 +317,7 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "The Grid";
 				TargetAttributes = {
 					2C85CDAD1B9FABD0002E204D = {
@@ -321,9 +328,12 @@
 					};
 					2C85CDEE1B9FADC0002E204D = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0800;
 					};
 					2C85CDF81B9FADC0002E204D = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -377,6 +387,159 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		014846360251024134AD8948 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		146251D03AAA92D61E0584E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		23CDBF2F2DF90A70A05CBBE6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImgFlo-Mac/Pods-ImgFlo-Mac-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B9F6C42977A6520DD2BC207 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImgFlo-iOSTests/Pods-ImgFlo-iOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DEE4684E1E342ACD30A51C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		903F053D742CA9157E4C24AE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImgFlo-iOSTests/Pods-ImgFlo-iOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C69F4201A3146A76E4C8926C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D6B5B749BC0EE6A25E2649CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImgFlo-MacTests/Pods-ImgFlo-MacTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDBB3146062A66E68E5AA48E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImgFlo-iOS/Pods-ImgFlo-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECFCA539C49467C77E36A571 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImgFlo-MacTests/Pods-ImgFlo-MacTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2C85CDA91B9FABD0002E204D /* Sources */ = {
@@ -450,8 +613,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -474,7 +639,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -497,8 +663,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -514,9 +682,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -524,7 +694,9 @@
 		};
 		2C85CDC51B9FABD0002E204D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F1CA119E5AE640FC9EBCDC6 /* Pods-ImgFlo-Mac.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -537,18 +709,29 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = ImgFlo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACH_O_TYPE = mh_dylib;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"SCrypto\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.thegrid.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ImgFlo;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = "x86_64 i386";
 			};
 			name = Debug;
 		};
 		2C85CDC61B9FABD0002E204D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99AA33FDE618D891C761A52E /* Pods-ImgFlo-Mac.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -561,53 +744,90 @@
 				INFOPLIST_FILE = ImgFlo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_dylib;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"SCrypto\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.thegrid.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ImgFlo;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = "x86_64 i386";
 			};
 			name = Release;
 		};
 		2C85CDC81B9FABD0002E204D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6137FCA34D34C03A45B48EB5 /* Pods-ImgFlo-MacTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = ImgFloTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks $(FRAMEWORK_SEARCH_PATHS)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks/Swift",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Nimble\"",
+					"-framework",
+					"\"Quick\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.thegrid.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = "x86_64 i386";
 			};
 			name = Debug;
 		};
 		2C85CDC91B9FABD0002E204D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 704852BB4A569793049872CE /* Pods-ImgFlo-MacTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ImgFloTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks $(FRAMEWORK_SEARCH_PATHS)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks/Swift",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Nimble\"",
+					"-framework",
+					"\"Quick\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.thegrid.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = "x86_64 i386";
 			};
 			name = Release;
 		};
 		2C85CE031B9FADC0002E204D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACFA145DF492014F2E6A254A /* Pods-ImgFlo-iOS.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -622,22 +842,25 @@
 				INFOPLIST_FILE = ImgFlo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.thegrid.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ImgFlo;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		2C85CE041B9FADC0002E204D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D795D9714A9D782F4D14F5CA /* Pods-ImgFlo-iOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -646,11 +869,12 @@
 				INFOPLIST_FILE = ImgFlo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.thegrid.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ImgFlo;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -658,40 +882,42 @@
 		};
 		2C85CE061B9FADC0002E204D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CE9D067C53C62503A6DDAC6 /* Pods-ImgFlo-iOSTests.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = ImgFloTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(FRAMEWORK_SEARCH_PATHS) $(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.thegrid.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		2C85CE071B9FADC0002E204D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F27C1272B74490C0AB55C91 /* Pods-ImgFlo-iOSTests.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ImgFloTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(FRAMEWORK_SEARCH_PATHS) $(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.thegrid.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

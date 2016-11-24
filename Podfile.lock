@@ -1,0 +1,27 @@
+PODS:
+  - Nimble (5.0.0)
+  - Quick (0.10.0)
+  - SCrypto (2.0.0)
+
+DEPENDENCIES:
+  - Nimble
+  - Quick
+  - SCrypto (from `https://github.com/Eke/SCrypto.git`)
+
+EXTERNAL SOURCES:
+  SCrypto:
+    :git: https://github.com/Eke/SCrypto.git
+
+CHECKOUT OPTIONS:
+  SCrypto:
+    :commit: 17597eb4597bbb467054a16a049de98f241e0b77
+    :git: https://github.com/Eke/SCrypto.git
+
+SPEC CHECKSUMS:
+  Nimble: 56fc9f5020effa2206de22c3dd910f4fb011b92f
+  Quick: 5d290df1c69d5ee2f0729956dcf0fd9a30447eaa
+  SCrypto: 92aaa31272aea33279985e318b1f97294c6a6643
+
+PODFILE CHECKSUM: 79aa03e52547db84f09ed4689966ddfa0a8d37be
+
+COCOAPODS: 1.0.1

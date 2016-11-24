@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ImgFlo"
-  s.version      = "0.2.6"
+  s.version      = "0.3.0"
   s.summary      = "Conveniently produce authorized imgflo URLs."
   s.homepage     = "https://github.com/the-grid/ImgFlo.swift"
   s.license     = { :type => "MIT" }
@@ -11,5 +11,5 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/the-grid/ImgFlo.swift.git", :tag => "#{s.version}" }
   s.source_files  = "Classes", "ImgFlo/**/*.swift"
   s.requires_arc = true
-  s.dependency "SCrypto", "~> 1.0.2"
+  s.dependency "SCrypto", "~> 2.0.0"
 end

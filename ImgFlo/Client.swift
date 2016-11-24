@@ -12,40 +12,41 @@ public struct Client {
         self.secret = secret
     }
     
-    public func getURL(graph: Graph, _ URLString: String, _ format: String? = nil) -> NSURL? {
-        guard let components = NSURLComponents(string: server) else {
-            return .None
+    public func getURL(_ graph: Graph, _ URLString: String, _ format: String? = nil) -> NSURL? {
+        guard var components = URLComponents(string: server) else {
+            return .none
         }
         
-        guard let URL = NSURL(string: URLString) else {
-            return .None
+        guard let _URL = NSURL(string: URLString) else {
+            return .none
         }
         
-        guard URL.scheme != "data" else {
-            return URL
+        guard _URL.scheme != "data" else {
+            return _URL
         }
         
-        let input = NSURLQueryItem(name: "input", value: URLString)
+        let input = URLQueryItem(name: "input", value: URLString)
         let verifiedGraph: Graph
         
-        if URL.pathExtension == "gif" {
-            verifiedGraph = .NoOp
+        if _URL.pathExtension == "gif" {
+            verifiedGraph = .noOp
         } else {
             verifiedGraph = graph
         }
         
         components.queryItems = [ input ] + verifiedGraph.queryItems
-        
+
         guard let query = components.percentEncodedQuery else {
-            return .None
+            return .none
         }
         
         let derivedFormat: String?
 
         if let providedFormat = format {
             derivedFormat = providedFormat
-        } else if let pathExtension = URL.pathExtension where !pathExtension.isEmpty {
-            derivedFormat = pathExtension.lowercaseString == "jpg:large" ? "jpg" : pathExtension
+        } else if !(_URL.pathExtension ?? "").isEmpty {
+            let pathExtension = _URL.pathExtension
+            derivedFormat = pathExtension?.lowercased() == "jpg:large" ? "jpg" : pathExtension
         } else {
             derivedFormat = nil
         }
@@ -53,15 +54,15 @@ public struct Client {
         let graphNameWithFormat: String
 
         if let format = derivedFormat {
-            graphNameWithFormat = verifiedGraph.pathComponent + "." + format.lowercaseString
+            graphNameWithFormat = verifiedGraph.pathComponent + "." + format.lowercased()
         } else {
             graphNameWithFormat = verifiedGraph.pathComponent
         }
         
         let token = "\(graphNameWithFormat)?\(query)\(secret)".MD5()
         
-        components.path = "/" + ([ "graph", key, token, graphNameWithFormat ]).joinWithSeparator("/")
+        components.path = "/" + ([ "graph", key, token, graphNameWithFormat ]).joined(separator: "/")
         
-        return components.URL
+        return components.url as NSURL?
     }
 }
