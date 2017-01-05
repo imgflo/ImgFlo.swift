@@ -7,7 +7,7 @@ def testing_pods
 end
 
 def default_pods
-  pod 'SCrypto', :git => 'https://github.com/Eke/SCrypto.git'
+  pod 'SCrypto', '2.0.0'
 end
 
 target 'ImgFlo-iOS' do
