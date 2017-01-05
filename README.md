@@ -23,7 +23,7 @@ let URL = imgflo.getURL(graph, input)
 
 ### Installing dependencies
 
-The following script requires [Carthage](https://github.com/Carthage/Carthage) to be installed.
+The following script requires [Cocoapods](https://cocoapods.org) to be installed.
 
 ```sh
 ./script/update
